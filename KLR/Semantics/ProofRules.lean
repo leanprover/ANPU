@@ -1006,7 +1006,7 @@ theorem dwpTSDunopAddValL (H : LocalContext.getv ctx "z" = some v) (H : 0 < Lx) 
   rw [Nat.add_comm _ _, StepN_add_iff]
   refine ⟨_, ⟨stepN_1_iff_step.mpr ?_, SL⟩⟩
   simp [Step, NML.step]
-  sorry
+  simp_all
 
 end dwp
 
